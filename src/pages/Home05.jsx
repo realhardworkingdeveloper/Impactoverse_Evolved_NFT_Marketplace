@@ -16,7 +16,7 @@ import Create from '../components/layouts/home-2/Create';
 const Home05 = () => {
     return (
         <div className='home-5'>
-            <Header />
+            <Header className="home-header" />
             <SliderStyle2 />
             <div className="section-main">
                 <LiveAuction data={liveAuctionData} />

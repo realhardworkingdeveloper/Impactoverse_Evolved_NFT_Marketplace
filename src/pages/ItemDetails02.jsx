@@ -156,7 +156,7 @@ const ItemDetails02 = () => {
                                             </div>
                                             <div className="item count-down">
                                             <Countdown date={Date.now() + 500000000}>
-                                                <span>You are good to go!</span>
+                                                <span>Ready, Go!</span>
                                             </Countdown>
                                             </div>
                                         </div>

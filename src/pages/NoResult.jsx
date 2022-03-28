@@ -113,7 +113,7 @@ const NoResult = () => {
                                                                     <div className="featured-countdown">
                                                                         <span className="slogan"></span>
                                                                         <Countdown date={Date.now() + 500000000}>
-                                                                            <span>You are good to go!</span>
+                                                                            <span>Ready, Go!</span>
                                                                         </Countdown>
                                                                     </div>
                                                                     <div className="button-place-bid">

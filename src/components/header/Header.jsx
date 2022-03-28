@@ -10,7 +10,8 @@ import imgsun from '../../assets/images/icon/sun.png'
 import avt from '../../assets/images/avatar/avt-2.jpg'
 
 
-const Header = () => {
+const Header = (props) => {
+    const {className} = props;
     const { pathname } = useLocation();
 
     const headerRef = useRef (null)
@@ -41,7 +42,7 @@ const Header = () => {
     };
 
     return (
-        <header id="header_main" className="header_1 js-header" ref={headerRef}>
+        <header id="header_main" className={`header_1 js-header ${className}`} ref={headerRef}>
             <div className="themesflat-container">
                 <div className="row">
                     <div className="col-md-12">                              

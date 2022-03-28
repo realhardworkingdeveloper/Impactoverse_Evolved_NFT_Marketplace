@@ -4,12 +4,13 @@ import img3 from '../images/blog/thumb-4.jpg';
 import img4 from '../images/blog/thumb-2.jpg';
 import img5 from '../images/blog/thumb-5.jpg';
 import img6 from '../images/blog/thumb-6-1.jpg';
-import imga1 from '../images/avatar/avt-2.jpg';
-import imga2 from '../images/avatar/avt-3.jpg';
-import imga3 from '../images/avatar/avt-6.jpg';
-import imga4 from '../images/avatar/avt-4.jpg';
-import imga5 from '../images/avatar/avt-8.jpg';
-import imga6 from '../images/avatar/avt-6.jpg';
+import imga1 from '../img/avatar/avatar(2).jpg';
+import imga2 from '../img/avatar/avatar(3).jpg';
+import imga3 from '../img/avatar/avatar(6).jpg';
+import imga4 from '../img/avatar/avatar(4).jpg';
+import imga5 from '../img/avatar/avatar(8).jpg';
+import imga6 from '../img/avatar/avatar(6).jpg';
+
 const blogData = [
     {
         img: img1,

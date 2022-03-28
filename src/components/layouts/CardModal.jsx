@@ -13,28 +13,13 @@ return (
     <Modal.Header closeButton></Modal.Header>
 
     <div className="modal-body space-y-20 pd-40">
-        <h3>Place a Bid</h3>
-        <p className="text-center">You must bid at least <span className="price color-popup">4.89 ETH</span>
+        <h3>Join Proposal</h3>
+        <p className="text-center">You must have received at least <span className="price color-popup">3</span> reviews
         </p>
-        <input type="text" className="form-control"
-            placeholder="00.00 ETH" />
-        <p>Enter quantity. <span className="color-popup">5 available</span>
+        <p>Enter your contribution rate. <span className="color-popup">5% available</span>
         </p>
         <input type="number" className="form-control" placeholder="1" />
-        <div className="hr"></div>
-        <div className="d-flex justify-content-between">
-            <p> You must bid at least:</p>
-            <p className="text-right price color-popup"> 4.89 ETH </p>
-        </div>
-        <div className="d-flex justify-content-between">
-            <p> Service free:</p>
-            <p className="text-right price color-popup"> 0,89 ETH </p>
-        </div>
-        <div className="d-flex justify-content-between">
-            <p> Total bid amount:</p>
-            <p className="text-right price color-popup"> 4 ETH </p>
-        </div>
-        <Link to="/wallet-connect" className="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close"> Place a bid</Link>
+        <Link to="/wallet-connect" className="btn btn-primary" data-toggle="modal" data-target="#popup_bid_success" data-dismiss="modal" aria-label="Close">Submit application</Link>
     </div>
     </Modal>
     

@@ -72,13 +72,13 @@ const ItemDetails01 = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="page-title-heading mg-bt-12">
-                                <h1 className="heading text-center">Item Details 1</h1>
+                                <h1 className="heading text-center">Item Details</h1>
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="#">Explore</Link></li>
-                                    <li>Item Details 1</li>
+                                    <li>Item Details</li>
                                 </ul>
                             </div>
                         </div>
@@ -150,7 +150,7 @@ const ItemDetails01 = () => {
                                         <div className="item count-down">
                                             <span className="heading style-2">Countdown</span>
                                             <Countdown date={Date.now() + 500000000}>
-                                                <span>You are good to go!</span>
+                                                <span>Ready, Go!</span>
                                             </Countdown>
                                         </div>
                                     </div>
@@ -237,7 +237,6 @@ const ItemDetails01 = () => {
                     </div>
                 </div>
             </div>
-            <LiveAuction data={liveAuctionData} />
             <Footer />
         </div>
     );

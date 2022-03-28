@@ -30,14 +30,8 @@ const Login = () => {
                 <div className="themesflat-container">
                     <div className="row">
                         <div className="col-12">
-                            <h2 className="tf-title-heading ct style-1">
-                                Login To NFTs
-                            </h2>
 
                             <div className="flat-form box-login-social">
-                                <div className="box-title-login">
-                                    <h5>Login with social</h5>
-                                </div>
                                 <ul>
                                     <li>
                                         <Link to="#" className="sc-button style-2 fl-button pri-3">
@@ -46,9 +40,9 @@ const Login = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="#" className="sc-button style-2 fl-button pri-3">
-                                            <i className="icon-fl-facebook"></i>
-                                            <span>Facebook</span>
+                                        <Link to="/wallet-connect" className="sc-button style-2 fl-button pri-3">
+                                            <i className="icon-fl-wallet"></i>
+                                            <span>Connect Wallet</span>
                                         </Link>
                                     </li>
                                 </ul>

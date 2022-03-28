@@ -5,8 +5,9 @@ import Footer from '../components/footer/Footer';
 import Countdown from "react-countdown";
 import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+
 import img1 from '../assets/images/box-item/image-box-6.jpg'
-import avt from '../assets/images/avatar/avt-9.jpg'
+import avt from '../assets/img/avatar/avatar(1).jpg'
 
 const CreateItem = () => {
     return (
@@ -43,7 +44,7 @@ const CreateItem = () => {
                                     <div className="featured-countdown">
                                         <span className="slogan"></span>
                                         <Countdown date={Date.now() + 500000000}>
-                                            <span>You are good to go!</span>
+                                            <span>Ready, Go!</span>
                                         </Countdown>
                                     </div>
                                 </div>
@@ -74,110 +75,42 @@ const CreateItem = () => {
                          </div>
                          <div className="col-xl-9 col-lg-6 col-md-12 col-12">
                              <div className="form-create-item">
-                                 <form action="#">
-                                    <h4 className="title-create-item">Upload file</h4>
-                                    <label className="uploadFile">
-                                        <span className="filename">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</span>
-                                        <input type="file" className="inputfile form-control" name="file" />
-                                    </label>
-                                 </form>
-                                <div className="flat-tabs tab-create-item">
-                                    <h4 className="title-create-item">Select method</h4>
-                                    <Tabs>
-                                        <TabList>
-                                            <Tab><span className="icon-fl-tag"></span>Fixed Price</Tab>
-                                            <Tab><span className="icon-fl-clock"></span>Time Auctions</Tab>
-                                            <Tab><span className="icon-fl-icon-22"></span>Open For Bids</Tab>
-                                        </TabList>
+                                <div className="inner-row-form style-2">
+                                    <h4 className="title-create-item">Collection</h4>
+                                    <div className="seclect-box">
+                                        <div id="item-create" className="dropdown">
+                                            <Link to="#" className="btn-selector nolink">Sports Photography</Link>
+                                            <ul >
+                                                <li><span>Oil Paintings</span></li>
+                                                <li><span>Sports Photography</span></li>
+                                                <li><span>Classic music</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        <TabPanel>
-                                            <form action="#">
-                                                <h4 className="title-create-item">Price</h4>
-                                                <input type="text" placeholder="Enter price for one item (ETH)" />
+                                <h4 className="title-create-item">Upload file</h4>
+                                <label className="uploadFile">
+                                    <span className="filename">PNG, JPG, GIF, WEBP or MP4. Max 200mb.</span>
+                                    <input type="file" className="inputfile form-control" name="file" />
+                                </label>
 
-                                                <h4 className="title-create-item">Title</h4>
-                                                <input type="text" placeholder="Item Name" />
+                                <h4 className="title-create-item">Name</h4>
+                                <input type="text" placeholder="Item name" />
 
-                                                <h4 className="title-create-item">Description</h4>
-                                                <textarea placeholder="e.g. “This is very limited item”"></textarea>
+                                <h4 className="title-create-item">External link</h4>
+                                <input type="text" placeholder="https://yoursite.com/item/1" />
 
-                                                <div className="row-form style-3">
-                                                    <div className="inner-row-form">
-                                                        <h4 className="title-create-item">Royalties</h4>
-                                                        <input type="text" placeholder="5%" />
-                                                    </div>
-                                                    <div className="inner-row-form">
-                                                        <h4 className="title-create-item">Size</h4>
-                                                        <input type="text" placeholder="e.g. “size”" />
-                                                    </div>
-                                                    <div className="inner-row-form style-2">
-                                                        <div className="seclect-box">
-                                                            <div id="item-create" className="dropdown">
-                                                                <Link to="#" className="btn-selector nolink">Abstraction</Link>
-                                                                <ul >
-                                                                    <li><span>Art</span></li>
-                                                                    <li><span>Music</span></li>
-                                                                    <li><span>Domain Names</span></li>
-                                                                    <li><span>Virtual World</span></li>
-                                                                    <li><span>Trading Cards</span></li>
-                                                                    <li><span>Sports</span></li>
-                                                                    <li><span>Utility</span></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </form>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <form action="#">
-                                                <h4 className="title-create-item">Minimum bid</h4>
-                                                <input type="text" placeholder="enter minimum bid" />
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        <h5 className="title-create-item">Starting date</h5>
-                                                        <input type="date" name="bid_starting_date" id="bid_starting_date" className="form-control" min="1997-01-01" />
-                                                    </div>
-                                                    <div className="col-md-6">
-                                                        <h4 className="title-create-item">Expiration date</h4>
-                                                        <input type="date" name="bid_expiration_date" id="bid_expiration_date" className="form-control" />
-                                                    </div>
-                                                </div>
+                                <h4 className="title-create-item">Description</h4>
+                                <textarea placeholder="e.g. “This is very limited item”"></textarea>
 
-                                                <h4 className="title-create-item">Title</h4>
-                                                <input type="text" placeholder="Item Name" />
+                                <h4 className="title-create-item">Royalties</h4>
+                                <input type="text" placeholder="5%" />
 
-                                                <h4 className="title-create-item">Description</h4>
-                                                <textarea placeholder="e.g. “This is very limited item”"></textarea>
-                                            </form>
-                                        </TabPanel>
-                                        <TabPanel>
-                                            <form action="#">
-                                                <h4 className="title-create-item">Price</h4>
-                                                <input type="text" placeholder="Enter price for one item (ETH)" />
-
-                                                <h4 className="title-create-item">Minimum bid</h4>
-                                                <input type="text" placeholder="enter minimum bid" />
-
-                                                <div className="row">
-                                                    <div className="col-md-6">
-                                                        <h5 className="title-create-item">Starting date</h5>
-                                                        <input type="date" name="bid_starting_date" id="bid_starting_date2" className="form-control" min="1997-01-01" />
-                                                    </div>
-                                                    <div className="col-md-6">
-                                                        <h4 className="title-create-item">Expiration date</h4>
-                                                        <input type="date" name="bid_expiration_date" id="bid_expiration_date2" className="form-control" />
-                                                    </div>
-                                                </div>
-
-                                                <h4 className="title-create-item">Title</h4>
-                                                <input type="text" placeholder="Item Name" />
-
-                                                <h4 className="title-create-item">Description</h4>
-                                                <textarea placeholder="e.g. “This is very limited item”"></textarea>
-                                            </form>
-                                        </TabPanel>
-                                    </Tabs>
+                                <div className="sc-btn-top mg-r-12 submit-button" >
+                                    <button className="sc-button header-slider style style-1 rocket fl-button pri-1">
+                                        <span>Create Item</span>
+                                    </button>
                                 </div>
                              </div>
                          </div>

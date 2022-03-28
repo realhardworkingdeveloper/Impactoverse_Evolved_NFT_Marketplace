@@ -2,32 +2,32 @@ import React , { useState , Fragment } from 'react';
 import {Link} from 'react-router-dom';
 import { Tab, Tabs, TabList, TabPanel  } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import CardModal from '../CardModal';
+import GalleryDetail from '../GalleryDetail';
 
 
 import img1 from '../../../assets/images/box-item/card-item-3.jpg'
-import imga1 from '../../../assets/images/avatar/avt-1.jpg'
+import imga1 from '../../../assets/img/avatar/avatar(1).jpg'
 import imgCollection1 from '../../../assets/images/avatar/avt-18.jpg'
 import img2 from '../../../assets/images/box-item/card-item-4.jpg'
-import imga2 from '../../../assets/images/avatar/avt-2.jpg'
+import imga2 from '../../../assets/img/avatar/avatar(2).jpg'
 import imgCollection2 from '../../../assets/images/avatar/avt-18.jpg'
 import img3 from '../../../assets/images/box-item/card-item-2.jpg'
-import imga3 from '../../../assets/images/avatar/avt-4.jpg'
+import imga3 from '../../../assets/img/avatar/avatar(3).jpg'
 import imgCollection3 from '../../../assets/images/avatar/avt-18.jpg'
 import img4 from '../../../assets/images/box-item/card-item-7.jpg'
-import imga4 from '../../../assets/images/avatar/avt-3.jpg'
+import imga4 from '../../../assets/img/avatar/avatar(4).jpg'
 import imgCollection4 from '../../../assets/images/avatar/avt-18.jpg'
 import img5 from '../../../assets/images/box-item/card-item8.jpg'
-import imga5 from '../../../assets/images/avatar/avt-12.jpg'
+import imga5 from '../../../assets/img/avatar/avatar(5).jpg'
 import imgCollection5 from '../../../assets/images/avatar/avt-18.jpg'
 import img6 from '../../../assets/images/box-item/card-item-9.jpg'
-import imga6 from '../../../assets/images/avatar/avt-1.jpg'
+import imga6 from '../../../assets/img/avatar/avatar(6).jpg'
 import imgCollection6 from '../../../assets/images/avatar/avt-18.jpg'
 import img7 from '../../../assets/images/box-item/image-box-6.jpg'
-import imga7 from '../../../assets/images/avatar/avt-4.jpg'
+import imga7 from '../../../assets/img/avatar/avatar(7).jpg'
 import imgCollection7 from '../../../assets/images/avatar/avt-18.jpg'
 import img8 from '../../../assets/images/box-item/image-box-11.jpg'
-import imga8 from '../../../assets/images/avatar/avt-3.jpg'
+import imga8 from '../../../assets/img/avatar/avatar(8).jpg'
 import imgCollection8 from '../../../assets/images/avatar/avt-18.jpg'
 
 const TodayPicks = () => {
@@ -84,8 +84,7 @@ const TodayPicks = () => {
                         priceChange: "$12.246",
                         wishlist: "100",
                         imgCollection: imgCollection2,
-                        nameCollection: "Creative Art 3D",
-                        feature: 'Coming Soon'
+                        nameCollection: "Creative Art 3D"
                     },
                     {
                         id: 3,
@@ -563,18 +562,14 @@ const TodayPicks = () => {
                                                 {
                                                     
                                                     data.dataContent.slice(0,visible).map (item=>(
-                                                    <div key={item.id} className={`sc-card-product explode style2 mg-bt ${item.feature ? 'comingsoon' : '' } `}>                               
+                                                    <div key={item.id} className='sc-card-product explode style2 mg-bt explore-item' onClick={() => setModalShow(true)}>                               
                                                         <div className="card-media">
-                                                            <Link to="/item-details-01"><img src={item.img} alt="Axies" /></Link>
-                                                            <div className="button-place-bid">
-                                                                <button onClick={() => setModalShow(true)} className="sc-button style-place-bid style bag fl-button pri-3"><span>Place Bid</span></button>
-                                                            </div>
+                                                            <img src={item.img} alt="Axies" />
                                                             <Link to="/login" className="wishlist-button heart"><span className="number-like">{item.wishlist}</span></Link>
                                                             <div className="coming-soon">{item.feature}</div>
                                                         </div>
                                                         <div className="card-title">
-                                                            <h5><Link to="/item-details-01">"{item.title}"</Link></h5>
-                                                            
+                                                            <h5>"{item.title}"</h5>
                                                         </div>
                                                         <div className="meta-info">
                                                             <div className="author">
@@ -582,7 +577,7 @@ const TodayPicks = () => {
                                                                     <img src={item.imgAuthor} alt="Axies" />
                                                                 </div>
                                                                 <div className="info">
-                                                                    <span>Creator</span>
+                                                                    <span>Owner</span>
                                                                     <h6> <Link to="/authors-02">{item.nameAuthor}</Link> </h6>
                                                                 </div>
                                                             </div>
@@ -590,7 +585,6 @@ const TodayPicks = () => {
                                                         </div>
                                                         <div className="card-bottom style-explode">
                                                             <div className="price">
-                                                                <span>Current Bid</span>
                                                                 <div className="price-details">
                                                                     <h5>{item.price}</h5>
                                                                     <span>= {item.priceChange}</span>
@@ -616,7 +610,7 @@ const TodayPicks = () => {
                     </div>
                 </div>
             </div>
-            <CardModal
+            <GalleryDetail className="gallery-modal"
                 show={modalShow}
                 onHide={() => setModalShow(false)}
             />

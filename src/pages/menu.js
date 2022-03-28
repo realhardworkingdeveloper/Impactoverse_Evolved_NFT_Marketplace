@@ -24,7 +24,7 @@ const menus = [
             {
                 id: 1,
                 sub: 'For Sale',
-                links: '/collections'
+                links: '/sales'
             },
             {
                 id: 2,
@@ -35,7 +35,7 @@ const menus = [
     },{
         id: 3,
         name: 'Campaigns',
-        links: '/campaigns'
+        links: '/campaign'
     },
     {
         id: 4,
@@ -57,7 +57,7 @@ const menus = [
     {
         id: 5,
         name: 'HowTo',
-        links: '#'
+        links: '/howto'
     }
 ]
 

@@ -87,7 +87,7 @@ const PopularCollection = () => {
         ]
     )
     return (
-        <section className="tf-section live-auctions style4 home5 bg-style2">
+        <section className="tf-section live-auctions style4 home5">
             <div className="themesflat-container">
                 <div className="row">
                     <div className="col-md-12">

@@ -23,10 +23,9 @@
     * Home Update
 */
 
-
 .tf-section {
     padding: 80px 0;
-    /* background: var(--bg-section); */
+    background: var(--bg-section);
     margin-bottom: 0 !important;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -34,6 +33,11 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+.section-main .tf-section {
+    background: none !important;
+}
+
 .tf-connect-wallet.tf-section {
     padding: 80px 0 50px;
 }
@@ -544,10 +548,10 @@
 }
 
 .style-2 .sc-box-icon:last-child {
-    margin-bottom: 0 !important;
+    /* margin-bottom: 0 !important; */
 }
 .tf-connect-wallet .sc-box-icon-inner.style-2 .sc-box-icon:last-child {
-    margin-bottom: 30px !important;
+    /* margin-bottom: 30px !important; */
 }
 
 .style-2 .sc-box-icon .img {
@@ -1977,11 +1981,11 @@
 .flat-title-page.inner {
     padding        : 139px 0 59px;
     position       : relative;
-    background     : url(../images/backgroup-secsion/img_bg_page_title_inner.jpg) center center no-repeat;
+    background     : url(../images/backgroup-secsion/img_bg_page_title_inner.jpg) center center no-repeat !important;
     background-size: cover;
 }
 .is_dark .flat-title-page.inner {
-    background     : url(../images/backgroup-secsion/img_bg_page_title_dark.jpg) center center no-repeat;
+    background     : url(../images/backgroup-secsion/img_bg_page_title_dark.jpg) center center no-repeat !important;
     background-size: cover;
 }
 .page-title-heading .heading {
@@ -5192,7 +5196,7 @@ button.accordion-button {
     width: 73%;
 }
 .table-ranking .th-title .column1{
-    width: 22.5%;
+    width: 25%;
 }
 
 /* Modal Popup  */
@@ -7494,7 +7498,7 @@ button.accordion-button {
     border: none;
 } 
 .home-8 .flat-tabs.items .react-tabs__tab-list {
-    position: fixed;
+    /* position: fixed; */
 }
 .is_dark .flat-tabs.items .react-tabs__tab-list {
     background-color: #1F1F2C; 
@@ -8038,9 +8042,10 @@ button.accordion-button {
     margin-bottom: 0;
 }
 .home-8 .side-bar.item {
-    position: fixed;
+    /* position: fixed; */
+    width: 100%;
     overflow-x: auto;
-    height: 800px;
+    /* height: 800px; */
 }
 .home-8 .header_1.header_2.style2 {
     position: fixed !important;
@@ -8253,4 +8258,8 @@ button.accordion-button {
 
 .search-field::placeholder {
     color: white !important;
+}
+
+.home-8 .tf-item {
+    padding-top: 0px;
 }

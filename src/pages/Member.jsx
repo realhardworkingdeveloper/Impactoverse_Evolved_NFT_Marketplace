@@ -33,7 +33,7 @@ import imga8 from '../assets/images/avatar/avt-3.jpg'
 import imgCollection8 from '../assets/images/avatar/avt-18.jpg'
 
 
-const Authors02 = () => {
+const Member = () => {
     const [menuTab] = useState(
         [
             {
@@ -51,11 +51,7 @@ const Authors02 = () => {
             {
                 class: '',
                 name: 'COLLECTIBLES'
-            },
-            {
-                class: '',
-                name: 'SPORTS'
-            },
+            }
         ]
     )
     const [panelTab] = useState(
@@ -517,13 +513,13 @@ const Authors02 = () => {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="page-title-heading mg-bt-12">
-                                <h1 className="heading text-center">Author</h1>
+                                <h1 className="heading text-center">Member Details</h1>
                             </div>
                             <div className="breadcrumbs style2">
                                 <ul>
                                     <li><Link to="/">Home</Link></li>
                                     <li><Link to="#">Pages</Link></li>
-                                    <li>Author</li>
+                                    <li>Member</li>
                                 </ul>
                             </div>
                         </div>
@@ -538,7 +534,7 @@ const Authors02 = () => {
                                 <img src={avt} alt="Axies" className="avatar" />
                             </div>
                             <div className="infor-profile">
-                                <span>Author Profile</span>
+                                <span>Profile</span>
                                 <h2 className="title">Trista Francis</h2>
                                 <p className="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
                                 <form>
@@ -636,4 +632,4 @@ const Authors02 = () => {
     );
 }
 
-export default Authors02;
+export default Member;

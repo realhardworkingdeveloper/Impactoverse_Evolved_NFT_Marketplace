@@ -1,13 +1,23 @@
+import Home05 from "./Home05";
+import DIYOption from "./DIYOption";
+import CreateCollection from "./CreateCollection";
+import CreateItem from "./CreateItem";
+import ExploreForSales from "./ExploreForSales";
+import Gallery from "./Gallery";
+import Campaign from "./Campaign";
+import Vote from "./Vote";
+import DFYOption from "./DFYOption";
+
 import Home01 from "./Home01";
 import Home02 from "./Home02";
 import Home03 from "./Home03";
 import Home04 from "./Home04";
-import Home05 from "./Home05";
 import Home06 from "./Home06";
 import Home07 from "./Home07";
 import Home08 from "./Home08";
 import Explore01 from "./Explore01";
 import Explore02 from "./Explore02";
+import Login from "./Login";
 import Explore03 from "./Explore03";
 import Explore04 from "./Explore04";
 import LiveAuctions from "./LiveAuctions";
@@ -19,12 +29,10 @@ import Blog from "./Blog";
 import BlogDetails from "./BlogDetails";
 import HelpCenter from "./HelpCenter";
 import Authors01 from "./Authors01";
-import Authors02 from "./Authors02";
+import Member from "./Member";
 import WalletConnect from "./WalletConnect";
-import CreateItem from "./CreateItem";
 import EditProfile from "./EditProfile";
 import Ranking from "./Ranking";
-import Login from "./Login";
 import SignUp from "./SignUp";
 import NoResult from "./NoResult";
 import FAQ from "./FAQ";
@@ -35,6 +43,21 @@ import Contact02 from "./Contact02";
 const routes = [
   { path: '/', component: <Home05 />},
   { path: '/login', component: <Login />},
+  { path: '/diy', component: <DIYOption />},
+  { path: '/dfy', component: <DFYOption />},
+  { path: '/create_collection', component: <CreateCollection />},
+  { path: '/create_item', component: <CreateItem />},
+  { path: '/sales', component: <ExploreForSales />},
+  { path: '/gallery', component: <Gallery />},
+  { path: '/blog', component: <Blog />},
+  { path: '/blog-details', component: <BlogDetails />},
+  { path: '/campaign', component: <Campaign />},
+  { path: '/howto', component: <FAQ />},
+  { path: '/vote', component: <Vote />},
+  { path: '/member', component: <Member />},
+  { path: '/wallet-connect', component: <WalletConnect />},
+  { path: '/item-details-01', component: <ItemDetails01 />},
+
   // { path: '/home-02', component: <Home02 />},
   // { path: '/home-03', component: <Home03 />},
   // { path: '/home-04', component: <Home04 />},
@@ -49,10 +72,8 @@ const routes = [
   // { path: '/live-auctions', component: <LiveAuctions />},
   // { path: '/item-details-01', component: <ItemDetails01 />},
   // { path: '/item-details-02', component: <ItemDetails02 />},
-  // { path: '/activity-01', component: <Activity01 />},
-  // { path: '/activity-02', component: <Activity02 />},
-  // { path: '/blog', component: <Blog />},
-  // { path: '/blog-details', component: <BlogDetails />},
+  { path: '/activity-01', component: <Activity01 />},
+  { path: '/activity-02', component: <Activity02 />},
   // { path: '/help-center', component: <HelpCenter />},
   // { path: '/authors-01', component: <Authors01 />},
   // { path: '/authors-02', component: <Authors02 />},
